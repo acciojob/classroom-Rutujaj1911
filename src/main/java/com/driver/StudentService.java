@@ -7,7 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentService {
      @Autowired
-    StudentRepository studentRepository;
+     static
+     StudentRepository studentRepository;
      public void addStudent(Student student){
          studentRepository.saveStudent(student);
      }
